@@ -10,7 +10,7 @@ $("document").ready(function() {
     $('#nvidia').bind('click', alertButtonClick);
     $("tech").css("background-color", red)
     $("proj").css("background-color", red)
-    $("tech").css("background-color", blue)
+    $("links").css("background-color", blue)
 
 
 });

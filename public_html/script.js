@@ -4,14 +4,18 @@
  * and open the template in the editor.
  */
 /* Asthetics for different calsses or ids ex: sibling or nvidia */
-$("document").ready(function(){
-   $(".sibling").css("background-color", "gold"); 
-   $('p:last').css("background-color", "purple");
-   $('#nvidia').bind('click', alertButtonClick);
-   
+$("document").ready(function() {
+    $(".sibling").css("background-color", "gold");
+    $('p:last').css("background-color", "purple");
+    $('#nvidia').bind('click', alertButtonClick);
+    $("tech").css("background-color", red)
+    $("proj").css("background-color", red)
+    $("tech").css("background-color", blue)
+
+
 });
 /* Functions for different IDs */
-function alertButtonClick(){
+function alertButtonClick() {
     alert("You Pressed The Secret Button")
-    
+
 }

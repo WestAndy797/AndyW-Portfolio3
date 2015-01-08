@@ -8,14 +8,17 @@ $("document").ready(function() {
     $(".sibling").css("background-color", "gold");
     $('p:last').css("background-color", "purple");
     $('#nvidia').bind('click', alertButtonClick);
-    $("tech").css("background-color", red)
-    $("proj").css("background-color", red)
-    $("links").css("background-color", blue)
+    $("tech").css("background-color", red);
+    $("proj").css("background-color", red);
+    $("links").css("background-color", blue);
+    $('#Batman').bind('click', hideTheImage);
 
 
 });
 /* Functions for different IDs */
 function alertButtonClick() {
-    alert("You Pressed The Secret Button")
-
+    alert("The Way It's Meant To Be Played");
+}
+function hideTheLogo(){
+    $('Batman').hide('puff', {}, 2500);
 }

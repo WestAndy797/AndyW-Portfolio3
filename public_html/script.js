@@ -8,10 +8,10 @@ $("document").ready(function() {
     $(".sibling").css("background-color", "gold");
     $('p:last').css("background-color", "purple");
     $('#nvidia').bind('click', alertButtonClick);
-    $("tech").css("background-color", red);
-    $("proj").css("background-color", red);
-    $("links").css("background-color", blue);
-    $('#Batman').bind('click', hideTheImage);
+    $("tech").css("background-color", 'red');
+    $("proj").css("background-color", 'red');
+    $("links").css("background-color", 'blue');
+    $('#Batman2').bind('click', hideTheImage);
 
 
 });
@@ -19,6 +19,7 @@ $("document").ready(function() {
 function alertButtonClick() {
     alert("The Way It's Meant To Be Played");
 }
-function hideTheLogo(){
-    $('Batman').hide('puff', {}, 2500);
+function hideTheImage() {
+    console.log("hide");
+    $('#Batman1').hide('puff', {}, 2500);
 }

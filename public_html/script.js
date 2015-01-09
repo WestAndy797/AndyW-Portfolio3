@@ -18,10 +18,11 @@ $("document").ready(function() {
 
 
 });
-/* Functions for different IDs */
+/* Click the nvidia logo */
 function alertButtonClick() {
     alert("The Way It's Meant To Be Played");
 }
+// batman logo//
 function hideTheImage() {
     console.log("hide");
     $('#Batman1').hide('puff', {}, 2500);
@@ -30,6 +31,7 @@ function showTheImage() {
     console.log("hide");
     $('#Batman1').show('puff', {}, 2500);
 }
+//nvidia logo//
 function hideNvidia() {
     console.log("hide");
     $('#nvidia').hide('puff', {}, 2500);

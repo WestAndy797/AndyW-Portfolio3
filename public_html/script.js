@@ -12,6 +12,9 @@ $("document").ready(function() {
     $("proj").css("background-color", 'red');
     $("links").css("background-color", 'blue');
     $('#Batman2').bind('click', hideTheImage);
+    $('#Batman3').bind('click', showTheImage);
+    $('#nvidia2').bind('click', hideNvidia);
+    $('#nvidia3').bind('click', showNvidia);
 
 
 });
@@ -22,4 +25,16 @@ function alertButtonClick() {
 function hideTheImage() {
     console.log("hide");
     $('#Batman1').hide('puff', {}, 2500);
+}
+function showTheImage() {
+    console.log("hide");
+    $('#Batman1').show('puff', {}, 2500);
+}
+function hideNvidia() {
+    console.log("hide");
+    $('#nvidia').hide('puff', {}, 2500);
+}
+function showNvidia() {
+    console.log("hide");
+    $('#nvidia').show('puff', {}, 2500);
 }

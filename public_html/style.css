@@ -14,3 +14,11 @@ body {
 h1 {
     font-color: cyan
 }
+#animateList li a {
+    cursor: pointer;
+    transition: padding-left 250ms ease-out;
+    /* trans pattern:  property duration timingMethod delay */
+}
+#animateList li a:hover {
+    padding-left: 20px;
+}

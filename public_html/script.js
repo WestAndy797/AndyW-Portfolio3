@@ -15,12 +15,41 @@ $("document").ready(function() {
     $('#Batman3').bind('click', showTheImage);
     $('#nvidia2').bind('click', hideNvidia);
     $('#nvidia3').bind('click', showNvidia);
+    $('#Batman1').bind('click', alertButton);
+    $('#wrapper').tubular({videoId: 'QKx_mB3GC5I'});
 
 
+    $("#filter").keyup(function() {
+
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+
+        // Loop through the comment list
+        $(".commentlist li").each(function() {
+
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+
+                // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+
+        // Update the count
+        var numberItems = count;
+        $("#filter-count").text("Number Of Matches To Your Search = " + count);
+    });
 });
 /* Click the nvidia logo */
 function alertButtonClick() {
     alert("The Way It's Meant To Be Played");
+}
+/* click the batman logo */
+function alertButton() {
+    alert("I'm Batman!");
 }
 // batman logo//
 function hideTheImage() {

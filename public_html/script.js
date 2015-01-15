@@ -19,7 +19,7 @@ $("document").ready(function() {
     $('#wrapper').tubular({videoId: 'QKx_mB3GC5I'});
 
 
-    $("#filter").keyup(function() {
+             $("#filter").keyup(function() {
 
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val(), count = 0;
@@ -40,8 +40,8 @@ $("document").ready(function() {
 
         // Update the count
         var numberItems = count;
-        $("#filter-count").text("Number Of Matches To Your Search = " + count);
-    });
+        $("#filter-count").text("Number Of Matches To Your Search = " + count); 
+     
 });
 /* Click the nvidia logo */
 function alertButtonClick() {
@@ -53,19 +53,16 @@ function alertButton() {
 }
 // batman logo//
 function hideTheImage() {
-    console.log("hide");
     $('#Batman1').hide('puff', {}, 2500);
 }
 function showTheImage() {
-    console.log("hide");
     $('#Batman1').show('puff', {}, 2500);
 }
 //nvidia logo//
 function hideNvidia() {
-    console.log("hide");
     $('#nvidia').hide('puff', {}, 2500);
 }
 function showNvidia() {
-    console.log("hide");
     $('#nvidia').show('puff', {}, 2500);
 }
+});

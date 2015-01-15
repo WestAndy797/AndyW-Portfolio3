@@ -16,16 +16,16 @@ $("document").ready(function() {
     $('#nvidia2').bind('click', hideNvidia);
     $('#nvidia3').bind('click', showNvidia);
     $('#Batman1').bind('click', alertButton);
-    $('#wrapper').tubular({videoId: 'QKx_mB3GC5I'});
+   /* $('#wrapper').tubular({videoId: 'QKx_mB3GC5I'});*/
 
 
-             $("#filter").keyup(function() {
+            $("#filter").keyup(function() {
 
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val(), count = 0;
 
         // Loop through the comment list
-        $(".commentlist li").each(function() {
+        $(".commentlist").each(function() {
 
             // If the list item does not contain the text phrase fade it out
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {

@@ -9,10 +9,11 @@ and open the template in the editor.
 */
 
 body { 
-    background-image: url("http://gamingbolt.com/wp-content/uploads/2011/04/PORTAL-2-HD-1080P-WALLPAPER-PC.jpg")
+    background-image: url("http://www.msgkp.com/Content/img/bg/blue-001.jpg")
+     
 } 
 h1 {
-    font-color: cyan
+   color: cyan
 }
 #animateList li a {
     cursor: pointer;

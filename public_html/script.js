@@ -5,8 +5,8 @@
  */
 /* Asthetics for different calsses or ids ex: sibling or nvidia */
 $("document").ready(function() {
-    $(".sibling").css("background-color", "gold");
-    $('p:last').css("background-color", "purple");
+   // $(".sibling").css("background-color", "blue");
+   // $('p:last').css("background-color", "purple"); 
     $('#nvidia').bind('click', alertButtonClick);
     $("tech").css("background-color", 'red');
     $("proj").css("background-color", 'red');

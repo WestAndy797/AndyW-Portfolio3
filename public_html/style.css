@@ -9,11 +9,20 @@ and open the template in the editor.
 */
 
 body { 
-    background-image: url("http://www.msgkp.com/Content/img/bg/blue-001.jpg")
+    background-image: url("http://www.hdwallpapersinn.com/wp-content/uploads/2014/10/3931-pc-ware-1366x768-computer-wallpaper.jpg")
      
 } 
 h1 {
-   color: cyan
+   color: white;
+       
+}
+h2 {
+   color: white;
+      background-color: blue 
+}
+h3 {
+   color: white;
+   
 }
 #animateList li a {
     cursor: pointer;
@@ -22,4 +31,11 @@ h1 {
 }
 #animateList li a:hover {
     padding-left: 20px;
+}
+.jumbotron {
+    background-color: darkcyan;
+    padding: 0px
+}
+h4 {
+    background-color: blue
 }

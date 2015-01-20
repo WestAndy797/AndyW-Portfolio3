@@ -39,3 +39,15 @@ h3 {
 h4 {
     background-color: blue
 }
+ *{
+    cursor: none;
+}
+ 
+figure#mouse-pointer {
+    background-image: url('https://gp5.googleusercontent.com/-ZIXcUEp7tMU/AAAAAAAAAAI/AAAAAAAAAAA/WR8SMNhKGOM/s48-c-k-no/photo.jpg?sz=50');
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    margin-left: -8px; 
+    display: block;
+}

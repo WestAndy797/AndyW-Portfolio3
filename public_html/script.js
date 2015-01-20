@@ -5,8 +5,8 @@
  */
 /* Asthetics for different calsses or ids ex: sibling or nvidia */
 $("document").ready(function() {
-   // $(".sibling").css("background-color", "blue");
-   // $('p:last').css("background-color", "purple"); 
+    $(".sibling").css("background-color", "blue");
+    $('p:last').css("background-color", "purple"); 
     $('#nvidia').bind('click', alertButtonClick);
     $("tech").css("background-color", 'red');
     $("proj").css("background-color", 'red');
@@ -16,7 +16,17 @@ $("document").ready(function() {
     $('#nvidia2').bind('click', hideNvidia);
     $('#nvidia3').bind('click', showNvidia);
     $('#Batman1').bind('click', alertButton);
-   /* $('#wrapper').tubular({videoId: 'QKx_mB3GC5I'});*/
+    
+    $(function (){
+ 
+    $(window).mousemove(function(event) {
+        $('#mouse-pointer').css({
+            'top' : event.pageY + 'px',
+            'left' : event.pageX + 'px'
+        });
+    });
+});
+   
 
 
             $("#filter").keyup(function() {

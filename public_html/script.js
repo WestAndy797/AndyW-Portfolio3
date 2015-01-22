@@ -16,6 +16,7 @@ $("document").ready(function() {
     $('#nvidia2').bind('click', hideNvidia);
     $('#nvidia3').bind('click', showNvidia);
     $('#Batman1').bind('click', alertButton);
+    
 
     $(function() {
         //coding for the mouse cursor in JS

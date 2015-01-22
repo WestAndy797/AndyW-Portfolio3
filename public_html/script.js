@@ -6,7 +6,7 @@
 /* Asthetics for different calsses or ids ex: sibling or nvidia */
 $("document").ready(function() {
     $(".sibling").css("background-color", "blue");
-    $('p:last').css("background-color", "purple"); 
+    $('p:last').css("background-color", "purple");
     $('#nvidia').bind('click', alertButtonClick);
     $("tech").css("background-color", 'red');
     $("proj").css("background-color", 'red');
@@ -16,20 +16,20 @@ $("document").ready(function() {
     $('#nvidia2').bind('click', hideNvidia);
     $('#nvidia3').bind('click', showNvidia);
     $('#Batman1').bind('click', alertButton);
-    
-    $(function (){
- 
-    $(window).mousemove(function(event) {
-        $('#mouse-pointer').css({
-            'top' : event.pageY + 'px',
-            'left' : event.pageX + 'px'
+
+    $(function() {
+        //coding for the mouse cursor in JS
+        $(window).mousemove(function(event) {
+            $('#mouse-pointer').css({
+                'top': event.pageY + 'px',
+                'left': event.pageX + 'px'
+            });
         });
     });
-});
-   
 
 
-            $("#filter").keyup(function() {
+// coding for the search bar
+    $("#filter").keyup(function() {
 
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val(), count = 0;
@@ -50,29 +50,29 @@ $("document").ready(function() {
 
         // Update the count
         var numberItems = count;
-        $("#filter-count").text("Number Of Matches To Your Search = " + count); 
-     
-});
-/* Click the nvidia logo */
-function alertButtonClick() {
-    alert("The Way It's Meant To Be Played");
-}
-/* click the batman logo */
-function alertButton() {
-    alert("I'm Batman!");
-}
+        $("#filter-count").text("Number Of Matches To Your Search = " + count);
+
+    });
+    /* Click the nvidia logo */
+    function alertButtonClick() {
+        alert("The Way It's Meant To Be Played");
+    }
+    /* click the batman logo */
+    function alertButton() {
+        alert("I'm Batman!");
+    }
 // batman logo//
-function hideTheImage() {
-    $('#Batman1').hide('puff', {}, 2500);
-}
-function showTheImage() {
-    $('#Batman1').show('puff', {}, 2500);
-}
+    function hideTheImage() {
+        $('#Batman1').hide('puff', {}, 2500);
+    }
+    function showTheImage() {
+        $('#Batman1').show('puff', {}, 2500);
+    }
 //nvidia logo//
-function hideNvidia() {
-    $('#nvidia').hide('puff', {}, 2500);
-}
-function showNvidia() {
-    $('#nvidia').show('puff', {}, 2500);
-}
+    function hideNvidia() {
+        $('#nvidia').hide('puff', {}, 2500);
+    }
+    function showNvidia() {
+        $('#nvidia').show('puff', {}, 2500);
+    }
 });

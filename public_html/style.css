@@ -8,21 +8,39 @@ and open the template in the editor.
     Author     : Student
 */
 
-body { 
-    background-image: url("https://computerinformationschool.files.wordpress.com/2014/08/3840x2400-1.jpg")
-     
+body {
+  /* Location of the image */
+  background-image: url(https://computerinformationschool.files.wordpress.com/2014/08/3840x2400-1.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
 } 
 h1 {
-   color: white;
-       
+    color: white;
+
 }
 h2 {
-   color: white;
-      background-color: blue 
+    color: white;
+    background-color: blue 
 }
 h3 {
-   color: white;
-   
+    color: white;
+
 }
 #animateList li a {
     cursor: pointer;
@@ -39,10 +57,10 @@ h3 {
 h4 {
     background-color: blue
 }
- *{
+*{
     cursor: none;
 }
- 
+/* CSS coding t give the cursor the illusion of a different image */
 figure#mouse-pointer {
     background-image: url('https://gp5.googleusercontent.com/-ZIXcUEp7tMU/AAAAAAAAAAI/AAAAAAAAAAA/WR8SMNhKGOM/s48-c-k-no/photo.jpg?sz=50');
     width: 44px;
@@ -52,5 +70,8 @@ figure#mouse-pointer {
     display: block;
 }
 p{
+    color:white
+}
+js{
     color:white
 }
